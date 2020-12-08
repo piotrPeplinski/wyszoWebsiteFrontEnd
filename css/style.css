@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    background-color: #424242;
+    color: white;
+    
+}
+body {
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style: none;
+}
+
+/*  ------------------------------------ */
+/* HEADER */
+/*  ------------------------------------ */
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.52),rgba(0, 0, 0, 0.52)), url(img/zachod.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem 2rem;
+    background-attachment: fixed;
+    
+}
+.width-wrapper {
+    max-width: 115rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+nav img {
+    border-radius: 50%;
+    width: 11rem;
+
+}
+.main-nav {
+    display: flex;
+}
+.main-nav li {
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    
+}
+.main-nav li a {
+    padding: 1.5rem;
+    
+}
+/* SHIFT */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+}
+nav.shift ul li a:hover {
+    color: #ff8;
+}
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background:  #000;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 0.2rem;
+}
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+  
+/* BORDER HOVER EFFECT
+.main-nav li a:link,
+.main-nav li a:visited {
+    border-bottom: 0.2rem solid transparent;
+    padding-bottom: 0.5rem;
+    transition: border-bottom 0.4s, color 0.4s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 0.2rem solid #000;
+    
+    color: #ff8;
+    
+}
+*/
+/*  ------------------------------------ */
+/* REUSABLE */
+/*  ------------------------------------ */
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin-top: 30rem;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.btn {
+    
+    border: 0.1rem solid black;
+    border-radius: 3rem;
+    padding: 1.2rem 2.2rem;
+    font-size: 2.2rem;
+    transition: background-color 0.5s,border 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: black;
+    color: #ff8;
+    margin-right: 2.5rem;
+    
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+    color: #ff8;
+    border: 0.1rem solid  #ff8;
+    background-color: transparent;
+}
+
+.btn-full:hover,
+.btn-full:active,
+.btn-outline:hover,
+.btn-outline:active {
+    background-color: #101010;
+    border: 0.1rem solid #101010;
+}
