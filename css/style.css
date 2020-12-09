@@ -121,6 +121,11 @@ nav.shift ul li a:hover:after {
 /*  ------------------------------------ */
 /* REUSABLE */
 /*  ------------------------------------ */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 h1,h2 {
     text-transform: uppercase;
     font-weight: 300;
@@ -160,7 +165,7 @@ h2:after {
 .btn-outline:link,
 .btn-outline:visited {
     color: #ff8;
-    border: 0.1rem solid  #ff8;
+    border: 1px solid  #ff8;
     background-color: transparent;
 }
 
@@ -169,59 +174,63 @@ h2:after {
 .btn-outline:hover,
 .btn-outline:active {
     background-color: #101010;
-    border: 0.1rem solid #101010;
+    border: 1px solid #101010;
 }
 section {
-    padding: 5rem 0;
+    padding: 7rem 3rem;
 }
 
 /*  ------------------------------------ */
 /* ABOUT */
 /*  ------------------------------------ */
-
-.about {
-    display: flex;
-}
 .desc {
-    font-size: 3.5rem;
-    width: 72%;
+    font-size: 2.95rem;
+    width: 80%;
     margin: 0 auto;
     font-weight: 100;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
-
+.about {
+    display: flex;
+    
+}
 .story {
-    padding: 3rem;
-    font-size: 3rem;
-    flex: 1;
-    background-color: black;
+    font-weight: 300;
+    font-size: 2.7rem;
+    flex: 3;
     height: 100%;
+    padding: 2rem 3rem 2rem 3rem;
+    margin-left:3rem;
+    border: 1px solid #3b3b3b;
+    background-color: #323232;
+    box-shadow: 0 0 2px 2px #434343;
+    text-align: justify;
 }
 .story ion-icon {
     font-size: 5rem;
 }
-
-
-
-/* IMAGE HOVER EFFECT */
-.swap-on-hover {
-    position: relative;	
-    flex: 1;
+.self-image {
+    flex: 2;
+    margin-right: 0;
+    margin: -2px;
 }
-.swap-on-hover img {
-    position: absolute;
-    top:0;
-    left:0;
-    overflow: hidden;
+.self-image img {
     width: 100%;
-     
-  }
-  
-.swap-on-hover .swap-on-hover__front-image {
-    z-index: 9999;
-    transition: opacity 1.2s;
-    cursor: pointer;
-  }
-  .swap-on-hover:hover > .swap-on-hover__front-image{
-    opacity: 0;
-  }
+}
+
+.insta {
+    font-size: 2.5rem;
+    margin-top: -2rem;
+    color: #878787;
+    transition: color 0.3s;
+    
+}
+.insta ion-icon {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: -0.4rem;
+}
+
+.insta:hover {
+    color:#ff8;
+}
