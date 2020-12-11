@@ -151,6 +151,7 @@ h2:after {
     padding: 1.2rem 2.2rem;
     font-size: 2.2rem;
     transition: background-color 0.5s,border 0.5s;
+    font-weight: 300;
 }
 
 .btn-full:link,
@@ -233,4 +234,46 @@ section {
 
 .insta:hover {
     color:#ff8;
+}
+/*  ------------------------------------ */
+/* REUSABLE */
+/*  ------------------------------------ */
+.section-review {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.698),rgba(0, 0, 0, 0.52)),url(img/opinieBg2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+blockquote {
+    font-size: 2rem;
+    line-height: 145%;
+    font-style: italic;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0 2rem;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 11rem;
+    display: block;
+    margin-bottom: -1.5rem;
+    margin-left: -1rem;
+     
+}
+
+cite {
+    display: block;
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}
+cite:before {
+    content: "\007E";
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+
+}
+.section-review .row {
+    max-width: 1300px;
+    margin-top: 4rem;
 }
