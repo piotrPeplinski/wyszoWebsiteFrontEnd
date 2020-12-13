@@ -23,27 +23,27 @@
     <header>
         <div class="width-wrapper">
             <nav class="shift">
-                <a href="#"><img src="img/logo.jpg" alt="logo"></a>
+                <a href="#a"><img src="img/logo.jpg" alt="logo"></a>
                 <ul class="main-nav">
                     <li>
-                        <a href="#">O mnie</a>
+                        <a href="#a">O mnie</a>
                     </li>
                     <li>
-                        <a href="#">Oferta</a>
+                        <a href="#a">Oferta</a>
                     </li>
                     <li>
-                        <a href="#">Opinie</a>
+                        <a href="#a">Opinie</a>
                     </li>
                     <li>
-                        <a href="#">Kontakt</a>
+                        <a href="#a">Kontakt</a>
                     </li>
                 </ul>
             </nav>
             <div class="motivation">
                 <h1>Nie musisz być wielki by zacząć,<br>
                     ale musisz zacząć by być wielki.</h1>
-                <a href="#" class="btn btn-full">Zacznij już dziś</a>
-                <a href="#" class="btn btn-outline">Napisz do mnie</a>
+                <a href="#a" class="btn btn-full">Zacznij już dziś</a>
+                <a href="#a" class="btn btn-outline">Napisz do mnie</a>
             </div>
         </div>
     </header>
@@ -58,7 +58,7 @@
         <div class="row">
             <div class="about">
                 <div class="self-image"><img src="img/frontImage.jpg" alt="przod">
-                    <a class="insta" href="#">
+                    <a class="insta" href="#a">
                         <ion-icon name="logo-instagram"></ion-icon>wyszo_calisthenics
                     </a>
                 </div>
@@ -127,7 +127,55 @@
                     <div class="price">
                         <h3>Premium</h3>
                         <p>129zł<span class="msc">/ miesiąc</span></p>
-                        <a href="#" class="read-more"><ion-icon name="document-text-outline"></ion-icon>Czytaj więcej</a>
+                        <a href="#a" id="popupLink1" class="read-more">
+
+                            <ion-icon name="document-text-outline"></ion-icon>Czytaj więcej
+                        </a>
+                        <!-- POPUP -->
+                        <div class="popup" id="popup1">
+                            <div class="popup-content">
+                                <a class="close" id="close1" href="#a">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </a>
+                                <div class="box-oferta">
+                                    <div class="price">
+                                        <h3>Premium</h3>
+                                        <p>129zł<span class="msc">/ miesiąc</span></p>
+                                    </div>
+                                    <div class="opis">
+                                        <ul>
+                                            <li>
+                                                <ion-icon name="barbell-outline"></ion-icon>Indywidualny plan treningowy
+                                            </li>
+                                            <li>
+                                                <ion-icon name="restaurant-outline"></ion-icon>Zoptymalizowana dieta
+                                            </li>
+                                            <li>
+                                                <ion-icon name="people-outline"></ion-icon>Prowadzenie online
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Opcja dla osób, które bardzo poważnie myślą o osiągnięciu swojego celu i
+                                            oczekują najwyższego poziomu współpracy z trenerem. Prowadzenie przeze mnie
+                                            zapewnia stały kontakt ze mną, cotygodniowe raporty i dogłębne
+                                            przeanalizowanie twoich treningów i diety. Dzięki indywidualnie
+                                            przygotowanemu planu treningowemu, który zawiera rodzaj ćwiczenia, ilość
+                                            serii, powtórzeń, tempo wykonywania ćwiczenia, a także uwzględnia progres z
+                                            tygodnia na tydzień i zoptymalizowanej diecie efekty będą najbardziej
+                                            widoczne i odczuwalne. Jest to najlepsza, ale i najdroższa opcja.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="buy-button">
+                                    <a href="#a" class="btn btn-full">Zamów teraz</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--POPUP END-->
                     </div>
                     <div class="opis">
                         <ul>
@@ -143,7 +191,7 @@
                         </ul>
                     </div>
                     <div class="buy-button">
-                        <a href="#" class="btn btn-full">Zamów teraz</a>
+                        <a href="#a" class="btn btn-full">Zamów teraz</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +200,53 @@
                     <div class="price">
                         <h3>Pro</h3>
                         <p>79,99zł<span class="msc">/ miesiąc</span></p>
-                        <a href="#" class="read-more"><ion-icon name="document-text-outline"></ion-icon>Czytaj więcej</a>
+                        <a href="#a" class="read-more" id="popupLink2">
+                            <ion-icon name="document-text-outline"></ion-icon>Czytaj więcej
+                        </a>
+                        <!-- POPUP -->
+
+                        <div class="popup" id="popup2">
+                            <div class="popup-content">
+                                <a class="close" id="close2" href="#a">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </a>
+                                <div class="box-oferta">
+                                    <div class="price">
+                                        <h3>Pro</h3>
+                                        <p>79,99zł<span class="msc">/ miesiąc</span></p>
+                                    </div>
+                                    <div class="opis">
+                                        <ul>
+                                            <li>
+                                                <ion-icon name="barbell-outline"></ion-icon>Indywidualny plan treningowy
+                                            </li>
+                                            <li class="disabled">
+                                                <ion-icon name="restaurant-outline"></ion-icon>Zoptymalizowana dieta
+                                            </li>
+                                            <li>
+                                                <ion-icon name="people-outline"></ion-icon>Prowadzenie online
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Opcja dla osób, które chcą skupić się głównie na celach
+                                            siłowych/treningowych. Plan treningowy jest stworzony indywidualnie pod
+                                            twoje cele, zawiera rodzaj ćwiczenia, ilość serii, powtórzeń, tempo
+                                            wykonywania ćwiczenia, a także uwzględnia progres z tygodnia na tydzień, a
+                                            prowadzenie online zapewnia Ci stały kontakt ze mną, cotygodniowe raporty i
+                                            dogłębne przeanalizowanie twoich treningów.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="buy-button">
+                                    <a href="#a" class="btn btn-full">Zamów teraz</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--POPUP END-->
                     </div>
                     <div class="opis">
                         <ul>
@@ -165,11 +259,11 @@
                             <li>
                                 <ion-icon name="people-outline"></ion-icon>Prowadzenie online
                             </li>
-                            
+
                         </ul>
                     </div>
                     <div class="buy-button">
-                        <a href="#" class="btn btn-outline">Zamów teraz</a>
+                        <a href="#a" class="btn btn-outline">Zamów teraz</a>
                     </div>
                 </div>
             </div>
@@ -180,7 +274,50 @@
                     <div class="price">
                         <h3>Trening</h3>
                         <p>49,99zł<span class="msc">/ miesiąc</span></p>
-                        <a href="#" class="read-more"><ion-icon name="document-text-outline"></ion-icon>Czytaj więcej</a>
+                        <a href="#a" class="read-more" id="popupLink3">
+                            <ion-icon name="document-text-outline"></ion-icon>Czytaj więcej
+                        </a>
+                        <!-- POPUP -->
+
+                        <div class="popup" id="popup3">
+                            <div class="popup-content">
+                                <a class="close" id="close3" href="#a">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </a>
+                                <div class="box-oferta">
+                                    <div class="price">
+                                        <h3>Trening</h3>
+                                        <p>49,99zł<span class="msc">/ miesiąc</span></p>
+                                    </div>
+                                    <div class="opis">
+                                        <ul>
+                                            <li>
+                                                <ion-icon name="barbell-outline"></ion-icon>Indywidualny plan treningowy
+                                            </li>
+                                            <li class="disabled">
+                                                <ion-icon name="restaurant-outline"></ion-icon>Zoptymalizowana dieta
+                                            </li>
+                                            <li class="disabled">
+                                                <ion-icon name="people-outline"></ion-icon>Prowadzenie online
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Opcja dla osób, które chcą trenować według starannie ułożonego,
+                                            indywidualnego planu treningowego, który zawiera rodzaj ćwiczenia, ilość
+                                            serii, powtórzeń, tempo wykonywania ćwiczenia, a także uwzględnia progres z
+                                            tygodnia na tydzień, jednak nie potrzebują prowadzenia online przeze mnie.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="buy-button">
+                                    <a href="#a" class="btn btn-full">Zamów teraz</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--POPUP END-->
                     </div>
                     <div class="opis">
                         <ul>
@@ -196,7 +333,7 @@
                         </ul>
                     </div>
                     <div class="buy-button">
-                        <a href="#" class="btn btn-outline">Zamów teraz</a>
+                        <a href="#a" class="btn btn-outline">Zamów teraz</a>
                     </div>
                 </div>
             </div>
@@ -205,14 +342,58 @@
                     <div class="price">
                         <h3>Dieta</h3>
                         <p>69,99zł<span class="msc">/ miesiąc</span></p>
-                        <a href="#" class="read-more"><ion-icon name="document-text-outline"></ion-icon>Czytaj więcej</a>
+                        <a href="#a" class="read-more" id="popupLink4">
+                            <ion-icon name="document-text-outline"></ion-icon>Czytaj więcej
+                        </a>
+                        <!-- POPUP -->
+                        <div class="popup" id="popup4">
+                            <div class="popup-content">
+                                <a class="close" id="close4" href="#a">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </a>
+                                <div class="box-oferta">
+                                    <div class="price">
+                                        <h3>Dieta</h3>
+                                        <p>69,99zł<span class="msc">/ miesiąc</span></p>
+                                    </div>
+                                    <div class="opis">
+                                        <ul>
+                                            <li class="disabled">
+                                                <ion-icon name="barbell-outline"></ion-icon>Indywidualny plan treningowy
+                                            </li>
+                                            <li>
+                                                <ion-icon name="restaurant-outline"></ion-icon>Zoptymalizowana dieta
+                                            </li>
+                                            <li class="disabled">
+                                                <ion-icon name="people-outline"></ion-icon>Prowadzenie online
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Oferta jest dla osób, które nie chcą, lub nie potrzebują planu treningowego,
+                                            jednak chcą zadbać o swoje zdrowie i prawidłowe odżywianie. Będzie to
+                                            możliwe poprzez starannie dobraną podaż energetyczną, a także rozkład
+                                            makroskładników i mikroelementów pod twoje cele. Jadłospis składa się z
+                                            łatwo dostępnych produktów i uwzględnia również przyjemność z jedzenia.
+                                            Innymi słowy nie musisz obawiać się o kurczaka z ryżem 3x dziennie.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="buy-button">
+                                    <a href="#a" class="btn btn-full">Zamów teraz</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--POPUP END-->
                     </div>
                     <div class="opis">
                         <ul>
                             <li class="disabled">
                                 <ion-icon name="barbell-outline"></ion-icon>Indywidualny plan treningowy
                             </li>
-                            <li >
+                            <li>
                                 <ion-icon name="restaurant-outline"></ion-icon>Zoptymalizowana dieta
                             </li>
                             <li class="disabled">
@@ -221,15 +402,17 @@
                         </ul>
                     </div>
                     <div class="buy-button">
-                        <a href="#" class="btn btn-outline">Zamów teraz</a>
+                        <a href="#a" class="btn btn-outline">Zamów teraz</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <div style="height: 9999px;"></div>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-    <script src="js/script.js"></script>
+    <scripts src="js/jquery-3.5.1.min.js">
+        </script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
