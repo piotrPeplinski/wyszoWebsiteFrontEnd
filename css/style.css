@@ -11,8 +11,9 @@ body {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    background-color:	#181818;
+    background-color:#181818;
     color: white;  
+    scroll-behavior: auto;
 }
 
 a {
@@ -147,7 +148,7 @@ h2:after {
 
 }
 .btn {
-    border-radius: 3rem;
+    border-radius: 30px;
     padding: 1.2rem 2.2rem;
     font-size: 2.2rem;
     transition: background-color 0.5s,border 0.5s;
@@ -156,7 +157,7 @@ h2:after {
 
 .btn-full:link,
 .btn-full:visited {
-    border: 0.1rem solid black;
+    border: 1px solid black;
     background-color: black;
     color: #ff8;
     margin-right: 2.5rem;
@@ -276,4 +277,67 @@ cite:before {
 .section-review .row {
     max-width: 1300px;
     margin-top: 4rem;
+}
+
+/*  ------------------------------------ */
+/* OFERTA */
+/*  ------------------------------------ */
+.section-oferta .row {
+    margin-bottom: 1.5rem;
+}
+.box-oferta {
+   display: flex; 
+   flex-direction: column;
+}
+
+.price {
+    background-color:#202020;
+    border-bottom: 1px solid #181818;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 1rem;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.price p {
+    font-size: 6.5rem;
+    font-weight: 100;
+    color: #ff8;
+    margin: 0;
+}
+.msc {
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+.opis {
+    background-color: #292929;
+    font-size: 2.5rem;
+    font-weight: 100;
+    border-bottom: 1px solid #181818;
+    padding: 1rem 0;
+    line-height: 150%;
+}
+.buy-button {
+    background-color: #292929;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.opis ion-icon {
+    color: #ff8;
+    margin-bottom: -3px;
+    margin-right: 15px;
+}
+.disabled ion-icon {
+    color: #979797;
+}
+.disabled {
+    width: fit-content;
+    text-decoration: line-through;
+    text-decoration-color: #979797;
+    color: #c2c0c0
 }
