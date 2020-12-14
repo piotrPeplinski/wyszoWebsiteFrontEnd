@@ -147,7 +147,8 @@ h2:after {
     margin: 2.5rem auto;
 
 }
-.btn {
+.btn:link,
+.btn:visited {
     border-radius: 30px;
     padding: 1.2rem 2.2rem;
     font-size: 2.2rem;
@@ -156,7 +157,9 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+.btn-full-light:link,
+.btn-full-light:visited {
     border: 1px solid black;
     background-color: black;
     color: #ff8;
@@ -178,6 +181,11 @@ h2:after {
     background-color: #101010;
     border: 1px solid #101010;
 }
+.btn-full-light:hover,
+.btn-full-light:active {
+    background-color: #101010;
+    border-color: #ff8;
+}
 section {
     padding: 7rem 3rem;
 }
@@ -194,7 +202,6 @@ section {
 }
 .about {
     display: flex;
-    
 }
 .story {
     font-weight: 300;
@@ -237,7 +244,7 @@ section {
     color:#ff8;
 }
 /*  ------------------------------------ */
-/* REUSABLE */
+/* OPINIE */
 /*  ------------------------------------ */
 .section-review {
     background-image: linear-gradient(rgba(0, 0, 0, 0.698),rgba(0, 0, 0, 0.52)),url(img/opinieBg2.jpeg);
@@ -376,7 +383,22 @@ h3 {
     width: 50%;
     position: relative;
   }
-  
+  .popup-text {
+    background-color: #292929;
+    font-size: 2.5rem;
+    font-weight: 100;
+    border-bottom: 1px solid #181818;
+    padding: 1rem 2rem;
+    line-height: 150%;
+}
+.popup-text p {
+    font-size: 2.5rem;
+    color: white;
+    text-align: justify;
+}
+.popup-bold {
+    font-weight: 400;
+}
   /* The Close Button */
   .close {
     color: #878787;
@@ -393,16 +415,78 @@ h3 {
     color: #ff8;
 
   }
-.popup-text {
-    background-color: #292929;
-    font-size: 2.5rem;
-    font-weight: 100;
-    border-bottom: 1px solid #181818;
-    padding: 1rem 2rem;
-    line-height: 150%;
+
+/*  ------------------------------------ */
+/* DARMOWY E-BOOK */
+/*  ------------------------------------ */
+.section-free {
+    background-color: #101010;
 }
-.popup-text p {
-    font-size: 2.5rem;
-    color: white;
+.redu {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 4rem;
+}
+.redu-text {
+    flex: 2;
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.14rem;
     text-align: justify;
+    margin: 1.2rem 3rem 0;
+    background-color: #181818;
+    padding: 2rem 3rem;
+    
+}
+.redu-text ion-icon {
+    font-size: 3.9rem;
+    color: #ff8;
+}
+.redu-img {
+    flex: 1;
+    margin-top: 1.2rem;
+}
+.redu-img img {
+    width: 100%;
+}
+.ebook-text {
+    max-width: 90rem;
+    margin: 0 auto;
+    font-size: 2.3rem;
+}
+.ebook-text p {
+    max-width: 89%;
+    margin: 0 auto;
+    color: #c2c2c2;
+}
+input {
+    display: block;
+    width: 50%;
+    height: 50px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+    margin: 2rem auto;
+    background-color: #070707;
+    border: 2px solid #181818;
+    background-image: url('img/mail-outline.svg');
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 60px;
+    color: #b1b1b1;
+    font-weight: 300;
+    transition: width 0.4s ease-in-out, border 0.4s,box-shadow 0.4s ease-in-out;
+}
+
+input:focus {
+    width: 55%;
+    box-shadow: 0 0 2px 2px #ff8;
+    border: 2px solid transparent;
+    outline: none;
+}
+::placeholder {
+    color:#757575;
+    font-weight: 300;
 }
