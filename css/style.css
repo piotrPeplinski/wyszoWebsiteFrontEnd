@@ -520,7 +520,7 @@ input:focus {
 .ebook-box a:visited {
     font-size: 2.5rem;
     font-weight: 100;
-    margin: 0.7rem 1rem;
+    margin: 1rem;
     text-transform: uppercase;
     color: #ff8;
     border-bottom: 1.8px solid #ff8;
@@ -535,4 +535,103 @@ input:focus {
 }
 .section-ebooks .desc {
     margin-bottom: 3.5rem;
+}
+/*  ------------------------------------ */
+/* KONTAKT */
+/*  ------------------------------------ */
+.section-contact {
+    background-color: #101010;
+}
+.contact {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #181818;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-between;
+}
+.contact-img {
+    flex: 1;
+    margin-right: 2rem;
+}
+.contact-img img {
+    width: 100%;
+}
+.contact-data {
+    flex: 1;
+    font-size: 3rem;
+    color: #c2c2c2;
+    font-weight: 100;
+    margin-left: 2rem;
+    
+}
+.contact-data ion-icon {
+    margin-bottom: -5px;
+    margin-right: 25px;
+    color: #ff8;
+    font-size: 3.5rem;
+}
+.contact-data-list li {
+    margin: 3rem 0;
+}
+
+.contact-data-list li a:link,
+.contact-data-list li a:visited {
+    color: #c2c2c2;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: all 0.4s;
+}
+.contact-data-list li a:hover,
+.contact-data-list li a:active {
+    color: #ff8;
+    border-bottom: 2px solid #ff8;
+    
+}
+/*  ------------------------------------ */
+/* FOOTER */
+/*  ------------------------------------ */
+footer {
+    padding: 4rem;
+    font-size: 1.8rem;
+    color: #c2c0c0;
+}
+
+.footer-logo img {
+    border-radius: 50%;
+    height: 7rem;
+}
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.logos ul {
+    display: flex;
+    font-size: 2.5rem;
+}
+.footer-fb,
+.footer-insta {
+    margin-right: 50%;
+    transition: color 0.3s;
+}
+.footer-fb:hover,
+.footer-fb:active {
+    color: #1877f2;
+}
+.footer-insta:hover,
+.footer-insta:active {
+    color: #c32aa3;
+}
+.developer a {
+    color: #c2c0c0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s;
+}
+.developer a:hover {
+    color: #ff8;
+    border-bottom: 1px solid #ff8;
 }
