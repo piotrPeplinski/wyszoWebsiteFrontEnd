@@ -4,16 +4,16 @@
 
 /* OPENING */
 document.getElementById("popupLink1").onclick = function () {
-  document.getElementById("popup1").style.display = "block";
+  document.getElementById("popup1").style.display = "flex";
 };
 document.getElementById("popupLink2").onclick = function () {
-  document.getElementById("popup2").style.display = "block";
+  document.getElementById("popup2").style.display = "flex";
 };
 document.getElementById("popupLink3").onclick = function () {
-  document.getElementById("popup3").style.display = "block";
+  document.getElementById("popup3").style.display = "flex";
 };
 document.getElementById("popupLink4").onclick = function () {
-  document.getElementById("popup4").style.display = "block";
+  document.getElementById("popup4").style.display = "flex";
 };
 
 /* CLOSING */
