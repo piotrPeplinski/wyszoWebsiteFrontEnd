@@ -577,10 +577,12 @@ input:focus {
     display: flex;
     flex-direction: column;
     background-color: #202020;
+    flex: 1;
 }
 .ebook-box img {
     width: 100%;
     border: none;
+    
 }
 #middle-box {
     margin: 0 4rem;
@@ -605,7 +607,6 @@ input:focus {
 .ebook-box a:active {
     color: white;
     border-bottom: 1.8px solid transparent;
-    font-size: 2.8rem;
 }
 .section-ebooks .desc {
     margin-bottom: 3.5rem;
