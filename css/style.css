@@ -615,6 +615,7 @@ input:focus {
 /*  ------------------------------------ */
 .section-contact {
     background-color: #101010;
+    padding: 6rem;
 }
 .contact {
     display: flex;
@@ -624,6 +625,16 @@ input:focus {
     align-items: center;
     padding: 3rem;
     justify-content: space-between;
+    transform: perspective(3000px) rotateX(40deg);
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    overflow: hidden;
+    box-shadow: 0 0 100px 10px black;
+}
+.contact:hover {
+    transform: perspective(0) rotateX(0);
+    overflow: hidden;
+    box-shadow: none;
 }
 .contact-img {
     flex: 1;
