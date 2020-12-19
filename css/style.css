@@ -721,3 +721,20 @@ footer {
     color: #ff8;
     border-bottom: 1px solid #ff8;
 }
+/*  ------------------------------------ */
+/* ANIMATIONS */
+/*  ------------------------------------ */
+/* section me insta link fade in */
+.js-insta-me {
+    opacity: 0;
+}
+/* section free cover fade in */
+.js-redu-cover {
+    opacity:0;
+}
+/* section ebooks fade in */
+.js-ebook-1,
+.js-ebook-2,
+.js-ebook-3 {
+    opacity: 0;
+}
