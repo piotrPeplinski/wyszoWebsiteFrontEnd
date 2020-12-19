@@ -49,9 +49,7 @@ header .btn-full:visited {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-   
-    
+    align-items: center;    
 }
 
 nav img {
@@ -108,22 +106,52 @@ nav.shift ul li a:hover:after {
     visibility: visible;
     height: 100%;
 }
-  
-/* BORDER HOVER EFFECT
-.main-nav li a:link,
-.main-nav li a:visited {
-    border-bottom: 0.2rem solid transparent;
-    padding-bottom: 0.5rem;
-    transition: border-bottom 0.4s, color 0.4s;
+
+/* STICKY NAV */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #101010fa;
+    z-index: 2;
+    padding: 1rem 20rem;
+    box-shadow: 0 0 20px 2px black;
 }
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 0.2rem solid #000;
-    
-    color: #ff8;
+.sticky img {
+    width: 7rem;
+}
+.sticky ul {margin: 0;}
+.sticky .main-nav li a {
+    padding: 1.5rem;
     
 }
-*/
+.sticky .main-nav li a  {
+  border-bottom: 2px solid transparent;
+  padding: 0 0 8px 0; 
+  margin: 0 3.1rem;
+}
+
+nav.sticky ul li a:hover {
+    color: white;
+    border-bottom: 2px solid #ff8;
+}
+nav.sticky ul li a:after {
+    display: none;
+}
+nav.sticky ul li a:hover:after {
+    display: none;
+}
+.nav-burger {display: none;}
+.nav-burger {
+    cursor: pointer;
+    font-size: 5rem;
+    padding: 10px 20px;
+    color: #c2c0c0;
+}
+.sticky .nav-burger {padding: 7px 7px 0 0;}
+
+
 /*  ------------------------------------ */
 /* REUSABLE */
 /*  ------------------------------------ */

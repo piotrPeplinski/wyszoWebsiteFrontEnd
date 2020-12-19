@@ -61,4 +61,27 @@ $(document).ready(function () {
     $('.js-ebook-3').addClass('animate__animated animate__fadeInUpBig animate__delay-2s');
   }, { offset: '10%' });
 
+  /* ------------------------------- */
+  /* NAV */
+  /* ------------------------------- */
+  /* nav pop-up */
+  $('.section-me').waypoint(function (direction) {
+    if (direction == "down") {
+      $('nav').addClass('sticky');
+    } else {
+      $('nav').removeClass('sticky');
+    }
+  },
+    {
+      offset: '50px;'
+    });
+  /* nav burger */
+  $('.nav-burger').click(function () {
+    $('.main-nav').slideToggle(200)
+    if ($('.nav-burger ion-icon').attr('name') == 'reorder-three') {
+      $('.nav-burger ion-icon').attr('name', 'close')
+    } else {
+      $('.nav-burger ion-icon').attr('name', 'reorder-three')
+    }
+  });
 });	
