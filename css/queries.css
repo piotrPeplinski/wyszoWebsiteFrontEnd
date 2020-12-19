@@ -1,0 +1,209 @@
+/* big tablets/small notebooks (just font size) */
+@media only screen and (max-width: 1200px) {
+    html {font-size: 8.72px;}
+    h1 {margin-top: 48rem;}
+    .popup-content {width: 65%;}
+    .width-wrapper{margin: 4rem;}
+}
+
+
+/* ipad */
+@media only screen and (max-width: 1023px) {
+    /* reusable */
+    section {padding: 4.5rem 2rem;}
+    /* contact */
+    .contact-data-list li {margin: 2.5rem 0;}
+    .contact-data ion-icon {margin-right: 12px;
+    font-size: 3rem;}
+    .contact-data {
+        margin-left: 1rem;
+        font-size: 2.2rem;
+    }
+    .contact-img {margin-right: 1rem;}
+    .contact {padding: 2rem;}
+
+    /* header */
+    h1,
+    h2 {
+        margin-top: 42rem;
+        font-size: 3.5rem;
+    }
+
+    /* about */
+    .story {
+        font-size: 2.3rem;
+        padding: 2rem;    
+    }
+    .story ion-icon {font-size: 40px;}
+    .desc {font-size: 2.5rem;}
+
+    /* review */
+    blockquote {
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+    cite {font-size: 2.1rem;}
+    cite:before {
+        font-size: 2.25rem;
+    }
+
+    /* offer */
+
+/* top left */
+.stack-top-left:hover {transform: translate(-12px, -12px);}
+.stack-top-left:hover::after {transform: translate(6px, 6px);}
+.stack-top-left:hover::before {transform: translate(12px, 12px);}
+/* top right */
+.stack-top-right:hover {transform: translate(12px, -12px);}
+.stack-top-right:hover::after {transform: translate(-6px, 6px);}
+.stack-top-right:hover::before {transform: translate(-12px, 12px);}
+/* bottom left */
+.stack-bottom-left:hover {transform: translate(-12px, 12px);}
+.stack-bottom-left:hover::after {transform: translate(6px, -6px);}
+.stack-bottom-left:hover::before {transform: translate(12px, -12px);}
+/* bottom right */
+.stack-bottom-right:hover {transform: translate(12px, 12px);}
+.stack-bottom-right:hover::after {transform: translate(-6px, -6px);}
+.stack-bottom-right:hover::before {transform: translate(-12px, -12px);}
+
+/* free */
+
+.redu ion-icon {font-size: 3.4rem;}
+.redu-text {
+    font-size: 2rem;
+    padding: 1.7rem 2.6rem;
+    word-spacing: 0.09rem;
+    margin: 1.2rem 0 0 2.4rem;
+}
+
+/* ebooks */
+.ebooks-row {flex-direction: column;}
+.ebook-box {
+    width:75%;
+    margin: 0rem auto;
+}
+#middle-box {margin: 3rem auto;}
+.ebook-box p {font-size: 2.2rem;}
+.ebook-box a {
+    font-size: 2.4rem;
+    margin: 1rem auto;
+}
+.section-ebooks .desc {max-width: 68%;}
+}
+
+
+/* iphone 6/7/8 */
+@media only screen and (max-width: 767px) {
+/* reusable */
+html {font-size: 7px;}
+section {padding: 3.5rem 1rem;}
+h2:after {margin-bottom: 1.5rem;}
+header .btn-full:link,
+header .btn-full:visited {margin-right: 2rem;}
+/* header */
+.main-nav {display: none;}
+.width-wrapper {margin: 0;}
+h1 {
+    margin-top: 35rem;
+    font-size: 3.8rem;
+}
+
+/* about */
+.about {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.self-image {flex: 1; margin: 0;}
+.insta {display: none;}
+
+.story {
+    margin: 1.6rem 0 0 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.story ion-icon {font-size: 24px;}
+
+/* review */
+.section-review .row {flex-direction: column;}
+#middle-review {margin: 6.4rem auto;}
+cite {
+    margin-top: 0.5rem;
+    font-size: 2.2rem;
+}
+blockquote {font-size: 2rem;}
+
+/* offer */
+.section-oferta .row {
+    flex-direction: column;
+    margin: 0;
+}
+.section-oferta .col {margin: 1rem auto;}
+.opis ion-icon {font-size: 20px;}
+.stack::before,
+.stack::after {display: none;}
+.stack:hover {transform: none;}
+.popup-content {width: 95%;}
+.popup-text {font-size: 2rem;}
+
+/* free ebook */
+.section-free {padding: 3.5rem 2.3rem;}
+.redu {
+    flex-direction: column;
+    background-color: #181818;
+    padding: 0;
+}
+#redu-big {display: none;}
+#redu-small {display: block;}
+.redu-text {
+    background-color: transparent;
+    margin: 0;
+    padding: 1.5rem;
+    flex: 1;
+}
+.redu-img {margin: 0;flex: 1;}
+.ebook-text p {max-width: 100%;}
+input {
+    width: 70%;
+    height: 40px;
+}
+input:focus {width: 80%;}
+
+/* ebooks */
+.section-ebooks .desc {max-width: 100%;}
+.ebook-box {width: 94%;}
+
+/* contact */
+.section-contact .desc {
+    width: 95%;
+    margin-bottom: 2.5rem;
+}
+.contact {
+    flex-direction: column;
+    transform:none;
+    transform-style: none;
+    transition: none;
+    overflow: none;
+}
+.contact:hover {box-shadow: 0 0 100px 10px black;}
+.contact-img {margin: 0;}
+.contact-data {margin: 0;}
+.contact-data-list {
+    margin: 0; 
+    padding: 0;
+    font-weight: 300;
+}
+/* footer */
+.footer-items {flex-direction: column-reverse;}
+.logos ul {
+    padding: 0;
+    margin: 2.4rem 0 0 0;
+}
+.footer-fb,
+.footer-insta {  margin: 0;}
+.footer-fb {margin-right: 15px;}
+
+}

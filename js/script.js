@@ -51,14 +51,14 @@ $(document).ready(function () {
 /* Ebooks fade in */
   $('.section-ebooks').waypoint(function (direction) {
     $('.js-ebook-1').addClass('animate__animated animate__fadeInUpBig');
-  }, { offset: '-10%' });
+  }, { offset: '10%' });
 
   $('.section-ebooks').waypoint(function (direction) {
     $('.js-ebook-2').addClass('animate__animated animate__fadeInUpBig animate__delay-1s');
-  }, { offset: '-10%' });
+  }, { offset: '10%' });
 
   $('.section-ebooks').waypoint(function (direction) {
     $('.js-ebook-3').addClass('animate__animated animate__fadeInUpBig animate__delay-2s');
-  }, { offset: '-10%' });
+  }, { offset: '10%' });
 
 });	
