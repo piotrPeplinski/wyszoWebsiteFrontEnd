@@ -148,9 +148,11 @@ nav.sticky ul li a:hover:after {
     font-size: 5rem;
     padding: 10px 20px;
     color: #c2c0c0;
+    transition: all 0.4s;
 }
 .sticky .nav-burger {padding: 7px 7px 0 0;}
-
+.nav-burger:hover,
+.nav-burger:active {color: #c2c0c0;}
 
 /*  ------------------------------------ */
 /* REUSABLE */
