@@ -424,9 +424,6 @@ h3 {
     color: #979797;
 }
 .disabled {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     text-decoration: line-through;
     -webkit-text-decoration-color: #979797;
             text-decoration-color: #979797;

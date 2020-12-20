@@ -280,7 +280,8 @@ html{font-size: 7px;}
 
 /* header */
 h1 {margin-top: 23rem;}
-header .btn-full {margin-bottom: 8px;}
+header .btn-full,
+header .btn-outline {margin-bottom: 8px;}
 
 /* kontakt */
 .contact-data {font-size: 1.5rem;}
