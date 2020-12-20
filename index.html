@@ -23,20 +23,20 @@
 <body>
     <header>
         <div class="width-wrapper">
-            <nav class="shift">
-                <a href="#a"><img src="img/logo.jpg" alt="logo"></a>
+            <nav class="shift" id="navbar">
+                <img src="img/logo.jpg" alt="logo">
                 <ul class="main-nav">
                     <li>
-                        <a href="#a">O mnie</a>
+                        <a class="nav-hide" href="#about">O mnie</a>
                     </li>
                     <li>
-                        <a href="#a">Oferta</a>
+                        <a class="nav-hide" href="#offer">Oferta</a>
                     </li>
                     <li>
-                        <a href="#a">Opinie</a>
+                        <a class="nav-hide" href="#review">Opinie</a>
                     </li>
                     <li>
-                        <a href="#a">Kontakt</a>
+                        <a class="nav-hide" href="#contact">Kontakt</a>
                     </li>
                 </ul>
                 <a class="nav-burger">
@@ -51,7 +51,7 @@
             </div>
         </div>
     </header>
-    <section class="section-me">
+    <section class="section-me" id="about">
         <div class="row text-center">
             <h2>Kilka słów o mnie...</h2>
             <p class="desc">Jestem Kuba.
@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section class="section-review">
+    <section class="section-review" id="review">
         <div class="row text-center">
             <h2>Opinie podopiecznych</h2>
         </div>
@@ -95,14 +95,14 @@
                     mi się poprawić
                     technikę wykonywanych ćwiczeń, a także lepiej zrozumieć jak powinien być ułożony mój plan
                     treningowy. Treningi wykonywane wspólnie zawsze
-                    były dla mnie ogromna przyjemnością i dostarczały mi dużo motywacji oraz pozytywnej energii.
+                    były dla mnie ogromną przyjemnością i dostarczały mi dużo motywacji oraz pozytywnej energii.
                     <cite>Karolina</cite>
                 </blockquote>
             </div>
             <div class="col" id="middle-review">
                 <blockquote>
                     Bardzo pozytywny człowiek. Bazuje na zdobytej wiedzy i własnym doświadczeniu. Chętny do współpracy
-                    z ludźmi, dobrze się z nimi dogaduje. Zawsze skłonny do pomocy. Traktuje treningi jako swoją pasje
+                    z ludźmi, dobrze się z nimi dogaduje. Zawsze skłonny do pomocy. Traktuje treningi jako swoją pasję
                     przez co jest bardzo wiarygodny. Polecam.
                     <cite>Edyta</cite>
                 </blockquote>
@@ -118,7 +118,7 @@
 
         </div>
     </section>
-    <section class="section-oferta">
+    <section class="section-oferta" id="offer">
         <div class="row text-center">
             <h2>Oferta</h2>
         </div>
@@ -357,7 +357,7 @@
                         <div class="price">
                             <h3>Dieta</h3>
                             <p>69,99zł<span class="msc">/ miesiąc</span></p>
-                            <a href="#" class="read-more" id="popupLink4">
+                            <a href="#a" class="read-more" id="popupLink4">
                                 <ion-icon name="document-text-outline"></ion-icon>Czytaj więcej
                             </a>
 
@@ -440,7 +440,7 @@
                         Wiedzę na temat redukcji zgłębiam od samego początku mojej przygody ze sportami siłowymi.
                         Niestety w internecie znajduje się wiele błędnych informacji i mitów, więc osoby początkujące
                         mogą popełniać masę błędów, które znacząco wpłyną na efekty redukcji i ich zdrowie.
-                        Zdecydowałem, że napiszę ten E-book i umożliwię Ci pobranie go<span class="popup-bold"> ZA
+                        Zdecydowałem, że napiszę ten e-book i umożliwię Ci pobranie go<span class="popup-bold"> ZA
                             DARMO,</span> aby raz na zawsze
                         obalić istniejące od lat mity redukcyjne i pokazać Ci jak redukować tkankę tłuszczową<span
                             class="popup-bold"> skutecznie
@@ -456,7 +456,7 @@
         <div class="row text-center">
 
             <div class="ebook-text">
-                <p>Jeśli spodoba Ci się ten E-book, możesz wspomóc mnie udostępniając go na relacji
+                <p>Jeśli spodoba Ci się ten e-book, możesz wspomóc mnie udostępniając go na relacji
                     instagram oznaczając
                     konto @wyszo_calisthenics. Będę bardzo wdzięczny! </p>
                 <input class="js-free-email" type="email" placeholder="Podaj e-mail">
@@ -487,7 +487,7 @@
                 <img src="img/kali.png" alt="masa">
                 <a class="js-contact" href="#" class="ebook-price">Zamów 29,99zł</a>
                 <p>
-                    E-book ten dedykowany dla osób chcących zacząć swoją przygodę z kalisteniką nie popełniając
+                    E-book ten dedykowany jest dla osób chcących zacząć swoją przygodę z kalisteniką nie popełniając
                     podstawowych błędów i robiąc widoczny progres od samego początku. Opisałem w nim dokładnie na czym
                     się skupić, aby zbudować siłę i umiejętności potrzebne do trudniejszych
                     elementów w kalistenice, omówiłem szczegółowo każde istotne ćwiczenie dla początkujących i pokazałem
@@ -501,7 +501,7 @@
                     Nauka tego elementu bywa bardzo uciążliwa, jest w nim wiele kwestii do omówienia, a większość
                     poradników w internecie jest niekompletna. Zebrałem wszystkie ważne aspekty podczas nauki stania
                     na
-                    rękach, rozpisałem je bardzo dokładnie, tydzień po tygodniu i stworzyłem ten E-book. Jeśli
+                    rękach, rozpisałem je bardzo dokładnie, tydzień po tygodniu i stworzyłem ten e-book. Jeśli
                     chcesz
                     przełamać strach i nauczyć się stać na rękach w prostej i kontrolowanej sylwetce, jest to opcja
                     dla
@@ -510,7 +510,7 @@
             </div>
         </div>
     </section>
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
         <div class="row text-center">
             <h2>Kontakt</h2>
             <p class="desc">Rozpocznij swoją przemianę już dziś wybierając z dostępnych planów oraz e-booków!
