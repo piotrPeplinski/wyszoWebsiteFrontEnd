@@ -260,3 +260,10 @@ header .btn-full {margin-bottom: 8px;}
 /* footer */
 
 }
+@media (hover: none) {
+    .ebook-box a:hover,
+    .ebook-box a:active {
+    color: white;
+    border-color: white;
+ } 
+}
