@@ -189,6 +189,7 @@ h2:after {
     font-size: 2.2rem;
     transition: background-color 0.5s,border 0.5s;
     font-weight: 300;
+    outline: none;
 }
 
 .btn-full:link,
@@ -198,6 +199,8 @@ h2:after {
     border: 1px solid black;
     background-color: black;
     color: #ff8;
+    outline: none;
+    box-shadow: none;
 }
 
 .btn-outline:link,
@@ -205,6 +208,8 @@ h2:after {
     color: #ff8;
     border: 1px solid  #ff8;
     background-color: transparent;
+    outline: none;
+    box-shadow: none;
 }
 
 .btn-full:hover,
@@ -213,11 +218,15 @@ h2:after {
 .btn-outline:active {
     background-color: #101010;
     border: 1px solid #101010;
+    outline: none;
+    box-shadow: none;
 }
 .btn-full-light:hover,
 .btn-full-light:active {
     background-color: #101010;
     border-color: #ff8;
+    outline: none;
+    box-shadow: none;
 }
 section {
     padding: 7rem 3rem;
@@ -495,9 +504,10 @@ h3 {
     background-color: #292929;
     font-size: 2.5rem;
     font-weight: 100;
-    border-bottom: 1px solid #181818;
     padding: 1rem 2rem;
     line-height: 150%;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .popup-text p {
     font-size: 2.5rem;

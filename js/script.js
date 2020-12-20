@@ -84,4 +84,27 @@ $(document).ready(function () {
       $('.nav-burger ion-icon').attr('name', 'reorder-three')
     }
   });
+
+  /* ------------------------------- */
+  /* SCROLLING */
+  /* ------------------------------- */
+/* HEADER BUTTONS */
+$(".js-offer").click(function () {
+  $('html, body').animate({
+    scrollTop: $(".section-oferta").offset().top - 50
+  }, 800);
+});
+$(".js-free").click(function () {
+  $('html, body').animate({
+    scrollTop: $(".section-free").offset().top - 50
+  }, 800);
+});
+/* OFFER BUTTONS */
+$(".js-contact").click(function () {
+  $('html, body').animate({
+    scrollTop: $(".section-contact").offset().top - 50
+  }, 1000);
+});
+
+
 });	

@@ -240,7 +240,7 @@ input:focus {width: 80%;}
 .footer-fb,
 .footer-insta {  margin: 0;}
 .footer-fb {margin-right: 15px;}
-
+.developer p {text-align: center;}
 }
 
 /* small phones */
@@ -258,5 +258,5 @@ header .btn-full {margin-bottom: 8px;}
 .contact-data ion-icon {margin-right: 5px;}
 .contact {padding: 1rem;}
 /* footer */
-.developer p {text-align: center;}
+
 }
