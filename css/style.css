@@ -817,24 +817,24 @@ input:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-transform: perspective(3000px) rotateX(40deg);
+    /* -webkit-transform: perspective(3000px) rotateX(40deg);
             transform: perspective(3000px) rotateX(40deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s;
+    transition: all 0.5s; */
     overflow: hidden;
     -webkit-box-shadow: 0 0 100px 10px black;
             box-shadow: 0 0 100px 10px black;
 }
-.contact:hover {
+/* .contact:hover {
     -webkit-transform: perspective(0) rotateX(0);
             transform: perspective(0) rotateX(0);
     overflow: hidden;
     -webkit-box-shadow: none;
             box-shadow: none;
-}
+} */
 .contact-img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
